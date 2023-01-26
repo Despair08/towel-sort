@@ -1,6 +1,9 @@
-// You should implement your task here.
+const matrix = [
+    [1, 2],
+    [3, 4],
+];
 
-module.exports = function towelSort(matrix) {
+function towelSort(matrix) {
     if (matrix === "undefined") {
         return [];
     }
@@ -17,4 +20,6 @@ module.exports = function towelSort(matrix) {
         }
     }
     return result;
-};
+}
+
+console.log(towelSort(matrix));
